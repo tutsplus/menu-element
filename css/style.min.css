@@ -60,5 +60,5 @@ menu{display:none}
 .demo-section header p{margin-bottom:0;text-transform:uppercase;color:#aaa}
 .demo-section p{color:#555}
 #on-web-app ul{padding:30px 60px;list-style-type:none;background-color:#eceff1}
-#on-web-app li{padding:10px;margin-bottom:3px;background-color:#fff}
+#on-web-app li{padding:10px;margin-bottom:3px;background-color:#fff;border:1px solid #b0bec5;-webkit-box-shadow:0 1px 2px 0 rgba(0,0,0,.1);box-shadow:0 1px 2px 0 rgba(0,0,0,.1)}
 #on-web-app input[type=checkbox]{margin-right:10px}
