@@ -1,0 +1,130 @@
+@import url('../bower_components/normalize.css/normalize.css');
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+  background-color: white;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.3em;}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+figure {
+    margin: 0 0 20px 0;
+}
+menu {
+    display: none;
+}
+
+.demo-header {
+    padding: 10px;
+    background-color: #f6f7f8;
+    color: #696f7c;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #dfe1e6;
+}
+
+.demo-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 680px;
+    padding: 50px 20px;
+    font-family: 'Merriweather', serif;
+}
+.demo-section {
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #f6f7f8;
+}
+.demo-section:last-child {
+    border-bottom: 0;   
+}
+.demo-section header h3 {
+    margin-top: 0;
+}
+.demo-section header p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #aaa;
+}
+.demo-section p {
+    color: #555;
+}
+
+#on-web-app ul {
+    padding: 30px 60px;
+    list-style-type: none;
+    background-color: #eceff1;
+}
+#on-web-app li {
+    padding: 10px;
+    margin-bottom: 3px;
+    background-color: #fff;
+}
+#on-web-app input[type=checkbox] {
+    margin-right: 10px;
+}

@@ -1,0 +1,64 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background:0 0}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+textarea{overflow:auto}
+optgroup{font-weight:700}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
+.cf:after,.cf:before{content:" ";display:table}
+.cf:after{clear:both}
+.cf{*zoom:1}
+body{background-color:#fff;font-weight:400;line-height:1.45;color:#333}
+p{margin-bottom:1.3em}
+h1,h2,h3,h4,h5,h6{font-family:Lato,sans-serif}
+h1,h2,h3,h4{margin:1.414em 0 .5em;font-weight:inherit;line-height:1.2}
+h1{margin-top:0;font-size:3.998em}
+h2{font-size:2.827em}
+h3{font-size:1.999em}
+h4{font-size:1.414em}
+.font_small,small{font-size:.707em}
+*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+img{max-width:100%;height:auto}
+figure{margin:0 0 20px}
+menu{display:none}
+.demo-header{padding:10px;background-color:#f6f7f8;color:#696f7c;font-size:12px;text-transform:uppercase;font-weight:600;border-bottom:1px solid #dfe1e6}
+.demo-container{margin-left:auto;margin-right:auto;width:100%;max-width:680px;padding:50px 20px;font-family:Merriweather,serif}
+.demo-section{padding-bottom:30px;margin-bottom:50px;border-bottom:1px solid #f6f7f8}
+.demo-section:last-child{border-bottom:0}
+.demo-section header h3{margin-top:0}
+.demo-section header p{margin-bottom:0;text-transform:uppercase;color:#aaa}
+.demo-section p{color:#555}
+#on-web-app ul{padding:30px 60px;list-style-type:none;background-color:#eceff1}
+#on-web-app li{padding:10px;margin-bottom:3px;background-color:#fff}
+#on-web-app input[type=checkbox]{margin-right:10px}

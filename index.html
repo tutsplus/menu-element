@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Menu Element</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato|Merriweather' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="demo-header">Menu Element</header>
+	<div class="demo-container">
+
+		<!-- Example 1 -->
+		<section class="demo-section" id="on-a-blog" contextmenu="demo-download">
+			<header class="section-header">
+				<p>Example 1</p>
+				<h3>On a Blog Post</h3>
+			</header>
+			<p>Cookie pastry soufflé candy canes. Chocolate jelly-o carrot cake icing candy canes cotton candy. Halvah pastry wafer sweet liquorice tiramisu pie tootsie roll sweet. Sugar plum gummies jelly-o sugar plum topping macaroon dragée unerdwear.com candy. Donut donut cake tootsie roll chocolate bar cheesecake marshmallow. Pastry sweet roll caramels cheesecake topping. Halvah candy marshmallow macaroon. Marzipan danish macaroon icing jujubes. Gummi bears sweet roll candy canes gummi bears candy canes pastry cotton candy unerdwear.com. Halvah sweet roll gummi bears muffin pastry bear claw wafer gummi bears fruitcake. Liquorice pie sesame snaps ice cream pastry lollipop candy canes jelly. Tart powder icing chocolate bar tart lemon drops unerdwear.com candy canes. Ice cream biscuit unerdwear.com donut soufflé. Candy canes sweet roll oat cake pastry unerdwear.com soufflé.</p>
+		</section>
+
+		<!-- Example 2 -->
+		<section class="demo-section" id="on-an-image" contextmenu="demo-image">
+			<header class="section-header">
+				<p>Example 2</p>
+				<h3>On an Image</h3>
+			</header>
+			<figure>
+				<img src="img/city.jpg" height="667" width="1000" alt="">
+			</figure>
+		</section>
+		
+		<!-- Example 3 -->
+		<section class="demo-section" id="on-web-app" contextmenu="demo-task">
+			<header>
+				<p>Example 3</p>
+				<h3>On a Web Application</h3>
+			</header>
+			<ul>
+				<li><input type="checkbox" name="" value="done">Fresh Avocado</li>
+				<li><input type="checkbox" name="" value="done">Red peppers</li>
+				<li><input type="checkbox" name="" value="done">Banana</li>
+				<li><input type="checkbox" name="" value="done">Butter</li>
+				<li><input type="checkbox" name="" value="done">Yogurt</li>
+			</ul>
+		</section>
+	</div>
+
+	<menu id="demo-download" type="context">
+		<menuitem onclick="" icon="img/download-cloud.png">Download the Source</menuitem>
+		<menuitem onclick="" icon="img/eye.png">View the Demo</menuitem>
+		<menuitem onclick="" icon="img/mail.png">Send Post</menuitem>
+		<menuitem onclick="" icon="img/balloon-left.png">Give a Comment</menuitem>
+		<menuitem onclick="" icon="img/feed.png">Get Blog Feed URL</menuitem>
+	</menu>
+
+	<menu id="demo-image" type="context">
+		<menuitem onclick="" icon="img/arrow-270.png">Rotate 90</menuitem>
+		<menuitem onclick="" icon="img/arrow-270.png">Rotate 180</menuitem>
+		<menuitem onclick="" icon="img/arrow-stop-180.png">Flip Horizontally</menuitem>
+		<menuitem onclick="" icon="img/arrow-stop-270.png">Flip Vertically</menuitem>
+	</menu>
+
+	<menu id="demo-task" type="context">
+		<menuitem onclick="" icon="img/plus-circle.png">New Task</menuitem>
+		<menuitem onclick="" icon="img/minus-circle.png">Remove Task</menuitem>
+	</menu>
+	
+	<script>
+
+	</script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
