@@ -29,7 +29,7 @@
 				<h3>On an Image</h3>
 			</header>
 			<figure>
-				<img src="img/city.jpg" height="667" width="1000" alt="">
+				<img id="image" src="img/city.jpg" height="667" width="1000" alt="">
 			</figure>
 		</section>
 		
@@ -50,15 +50,16 @@
 	</div>
 
 	<menu id="demo-download" type="context">
-		<menuitem onclick="" icon="img/download-cloud.png">Download the Source</menuitem>
-		<menuitem onclick="" icon="img/eye.png">View the Demo</menuitem>
-		<menuitem onclick="" icon="img/mail.png">Send Post</menuitem>
-		<menuitem onclick="" icon="img/balloon-left.png">Give a Comment</menuitem>
-		<menuitem onclick="" icon="img/feed.png">Get Blog Feed URL</menuitem>
+		<menuitem onclick="downloadSource()" icon="img/download-cloud.png">Download the Source</menuitem>
+		<menuitem onclick="viewDemo()" icon="img/eye.png">View the Demo</menuitem>
+		<menu label="Share...">
+			<menuitem onclick="getFeed()" icon="img/feed.png">Feed</menuitem>
+			<menuitem onclick="sendEmail()" icon="img/mail-send.png">Mail</menuitem>
+		</menu>
 	</menu>
 
 	<menu id="demo-image" type="context">
-		<menuitem onclick="" icon="img/arrow-270.png">Rotate 90</menuitem>
+		<menuitem onclick="rotateImage()" icon="img/arrow-270.png">Rotate 90</menuitem>
 		<menuitem onclick="" icon="img/arrow-270.png">Rotate 180</menuitem>
 		<menuitem onclick="" icon="img/arrow-stop-180.png">Flip Horizontally</menuitem>
 		<menuitem onclick="" icon="img/arrow-stop-270.png">Flip Vertically</menuitem>
@@ -70,7 +71,11 @@
 	</menu>
 	
 	<script>
-
+		var post = {
+			"source" : "https://github.com/tfirdaus/menu-element/archive/master.zip",
+			"demo"   : "http://tfirdaus.github.io/menu-element/",
+			"feed"   : "http://webdesign.tutsplus.com/posts.atom"
+		};
 	</script>
 	<script src="js/scripts.js"></script>
 </body>
