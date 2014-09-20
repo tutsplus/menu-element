@@ -77,14 +77,22 @@ menu {
     display: none;
 }
 
-.demo-header {
+.demo-header,
+.demo-notification {
     padding: 10px;
     background-color: #f6f7f8;
     color: #696f7c;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
-    border-bottom: 1px solid #dfe1e6;
+}
+.demo-notification {
+    text-align: center;
+    background-color: #ffca28;
+    color: #fff;
+    font-size: 12px;
+    border-top: 1px solid #ffc107;
+    border-bottom: 1px solid #ffc107;
 }
 
 .demo-container {
@@ -184,6 +192,7 @@ menu {
     transform: scaleY(-1);
 }
 
+li[contenteditable=true]:hover,
 li[contenteditable=true]:focus {
     background-color: #fffde7;
 }
