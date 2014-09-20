@@ -12,7 +12,6 @@
 <body>
 	<header class="demo-header">Menu Element</header>
 	<div class="demo-container">
-
 		<!-- Example 1 -->
 		<section class="demo-section" id="on-a-blog" contextmenu="demo-download">
 			<header class="section-header">
@@ -39,12 +38,37 @@
 				<p>Example 3</p>
 				<h3>On a Web Application</h3>
 			</header>
-			<ul>
-				<li><input type="checkbox" name="" value="done">Fresh Avocado</li>
-				<li><input type="checkbox" name="" value="done">Red peppers</li>
-				<li><input type="checkbox" name="" value="done">Banana</li>
-				<li><input type="checkbox" name="" value="done">Butter</li>
-				<li><input type="checkbox" name="" value="done">Yogurt</li>
+			<ul id="task">
+				<li class="task-item">
+					<ul class="cf">
+						<li class="task-check"><input type="checkbox" name="" value="done"></li>
+						<li class="task-name" contenteditable="true">Avocado</li>
+					</ul>
+				</li>
+				<li class="task-item">
+					<ul class="cf">
+						<li class="task-check"><input type="checkbox" name="" value="done"></li>
+						<li class="task-name" contenteditable="true">Peppers</li>
+					</ul>
+				</li>
+				<li class="task-item">
+					<ul class="cf">
+						<li class="task-check"><input type="checkbox" name="" value="done"></li>
+						<li class="task-name" contenteditable="true">Banana</li>
+					</ul>
+				</li>
+				<li class="task-item">
+					<ul class="cf">
+						<li class="task-check"><input type="checkbox" name="" value="done"></li>
+						<li class="task-name" contenteditable="true">Butter</li>
+					</ul>
+				</li>
+				<li class="task-item">
+					<ul class="cf">
+						<li class="task-check"><input type="checkbox" name="" value="done"></li>
+						<li class="task-name" contenteditable="true">Yogurt</li>
+					</ul>
+				</li>
 			</ul>
 		</section>
 	</div>
@@ -59,15 +83,14 @@
 	</menu>
 
 	<menu id="demo-image" type="context">
-		<menuitem onclick="rotateImage()" icon="img/arrow-270.png">Rotate 90</menuitem>
-		<menuitem onclick="" icon="img/arrow-270.png">Rotate 180</menuitem>
-		<menuitem onclick="" icon="img/arrow-stop-180.png">Flip Horizontally</menuitem>
-		<menuitem onclick="" icon="img/arrow-stop-270.png">Flip Vertically</menuitem>
+		<menuitem onclick="editImage('rotate-90')" icon="img/arrow-270.png">Rotate 90</menuitem>
+		<menuitem onclick="editImage('rotate-180')" icon="img/arrow-270.png">Rotate 180</menuitem>
+		<menuitem onclick="editImage('flip-horizontal')" icon="img/arrow-stop-180.png">Flip Horizontally</menuitem>
+		<menuitem onclick="editImage('flip-vertical')" icon="img/arrow-stop-270.png">Flip Vertically</menuitem>
 	</menu>
 
 	<menu id="demo-task" type="context">
-		<menuitem onclick="" icon="img/plus-circle.png">New Task</menuitem>
-		<menuitem onclick="" icon="img/minus-circle.png">Remove Task</menuitem>
+		<menuitem onclick="addNewTask()" icon="img/plus-circle.png">Add New Task</menuitem>
 	</menu>
 	
 	<script>
