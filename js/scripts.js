@@ -20,7 +20,7 @@ function sendEmail() {
 }
 
 // Example 2
-function editImage(name) {
+function imageRotation(name) {
 	document.getElementById('image').className = name;
 }
 
