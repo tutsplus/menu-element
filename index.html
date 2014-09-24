@@ -9,29 +9,29 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato|Merriweather' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body contextmenu="new-context-menu">
 	<header class="demo-header">Menu Element</header>
 	<div class="demo-notification">This demo only works in Firefox at the moment</div>
 
 	<div class="demo-container">
 		<!-- Example 1 -->
-		<section class="demo-section" id="on-a-blog" contextmenu="demo-download">
-			<header class="section-header">
-				<p>Example 1</p>
-				<h3>On a Blog Post</h3>
-			</header>
-			<p>Cookie pastry soufflé candy canes. Chocolate jelly-o carrot cake icing candy canes cotton candy. Halvah pastry wafer sweet liquorice tiramisu pie tootsie roll sweet. Sugar plum gummies jelly-o sugar plum topping macaroon dragée unerdwear.com candy. Donut donut cake tootsie roll chocolate bar cheesecake marshmallow. Pastry sweet roll caramels cheesecake topping. Halvah candy marshmallow macaroon. Marzipan danish macaroon icing jujubes. Gummi bears sweet roll candy canes gummi bears candy canes pastry cotton candy unerdwear.com. Halvah sweet roll gummi bears muffin pastry bear claw wafer gummi bears fruitcake. Liquorice pie sesame snaps ice cream pastry lollipop candy canes jelly. Tart powder icing chocolate bar tart lemon drops unerdwear.com candy canes. Ice cream biscuit unerdwear.com donut soufflé. Candy canes sweet roll oat cake pastry unerdwear.com soufflé.</p>
-		</section>
-
-		<!-- Example 2 -->
 		<section class="demo-section" id="on-an-image" contextmenu="demo-image">
 			<header class="section-header">
-				<p>Example 2</p>
+				<p>Example 1</p>
 				<h3>On an Image</h3>
 			</header>
 			<figure>
 				<img id="image" src="img/city.jpg" height="667" width="1000" alt="">
 			</figure>
+		</section>
+
+		<!-- Example 2 -->
+		<section class="demo-section" id="on-a-blog" contextmenu="demo-download">
+			<header class="section-header">
+				<p>Example 2</p>
+				<h3>On a Blog Post</h3>
+			</header>
+			<p>Cookie pastry soufflé candy canes. Chocolate jelly-o carrot cake icing candy canes cotton candy. Halvah pastry wafer sweet liquorice tiramisu pie tootsie roll sweet. Sugar plum gummies jelly-o sugar plum topping macaroon dragée unerdwear.com candy. Donut donut cake tootsie roll chocolate bar cheesecake marshmallow. Pastry sweet roll caramels cheesecake topping. Halvah candy marshmallow macaroon. Marzipan danish macaroon icing jujubes. Gummi bears sweet roll candy canes gummi bears candy canes pastry cotton candy unerdwear.com. Halvah sweet roll gummi bears muffin pastry bear claw wafer gummi bears fruitcake. Liquorice pie sesame snaps ice cream pastry lollipop candy canes jelly. Tart powder icing chocolate bar tart lemon drops unerdwear.com candy canes. Ice cream biscuit unerdwear.com donut soufflé. Candy canes sweet roll oat cake pastry unerdwear.com soufflé.</p>
 		</section>
 		
 		<!-- Example 3 -->
@@ -85,10 +85,12 @@
 	</menu>
 
 	<menu id="demo-image" type="context">
-		<menuitem onclick="editImage('rotate-90')" icon="img/arrow-return-090.png">Rotate 90</menuitem>
-		<menuitem onclick="editImage('rotate-180')" icon="img/arrow-return-180.png">Rotate 180</menuitem>
-		<menuitem onclick="editImage('flip-horizontal')" icon="img/arrow-stop-180.png">Flip Horizontally</menuitem>
-		<menuitem onclick="editImage('flip-vertical')" icon="img/arrow-stop-270.png">Flip Vertically</menuitem>
+		<menu label="Image Rotation">
+			<menuitem onclick="imageRotation('rotate-90')" icon="img/arrow-return-090.png">Rotate 90</menuitem>
+			<menuitem onclick="imageRotation('rotate-180')" icon="img/arrow-return-180.png">Rotate 180</menuitem>
+			<menuitem onclick="imageRotation('flip-horizontal')" icon="img/arrow-stop-180.png">Flip Horizontally</menuitem>
+			<menuitem onclick="imageRotation('flip-vertical')" icon="img/arrow-stop-270.png">Flip Vertically</menuitem>
+		</menu>
 	</menu>
 
 	<menu id="demo-task" type="context">
